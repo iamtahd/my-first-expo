@@ -1,13 +1,22 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import TaskList from "./TaskList";
 
-export default function App() {
+const initialTodos = [
+  {
+    task: 'Learn React Native'
+  }
+];
+
+const App = (initialTodos) => {
+  const [todos, setTodos] = React.useState(initialTodos);
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <TaskList/>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
@@ -17,3 +26,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
