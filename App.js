@@ -13,7 +13,7 @@ const App = (initialTodos) => {
 
   return (
     <View style={styles.container}>
-      <TaskList/>
+      <Text>Howdy</Text>
     </View>
   );
 };
