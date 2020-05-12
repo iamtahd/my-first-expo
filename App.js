@@ -1,19 +1,17 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import TaskList from "./TaskList";
 
-const initialTodos = [
-  {
-    task: 'Learn React Native'
-  }
-];
+// const initialTodos = [
+//   {
+//     task: 'Learn React Native'
+//   }
+// ];
 
-const App = (initialTodos) => {
-  const [todos, setTodos] = React.useState(initialTodos);
-
+const App = () => {
   return (
     <View style={styles.container}>
-      <Text>Howdy</Text>
+      <TaskList/>
     </View>
   );
 };
